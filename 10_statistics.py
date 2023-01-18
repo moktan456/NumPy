@@ -34,11 +34,15 @@ min_value = round(np.min(data),1)
 # ptp() method to calculate range
 data_range = round(np.ptp(data),1)
 
-lower_quartile = round(np.quantile(data,0),1)
+lower_quartile = round(np.quantile(data,0.25),1)
+
+#lower_quartile = round(np.quantile(data,0),1)
 
 inter_quartile = round(np.quantile(data,0.5),1)
 
-upper_quartile = round(np.quantile(data, 1),1)
+upper_quartile = round(np.quantile(data, 0.75),1)
+
+#upper_quartile = round(np.quantile(data, 1),1)
 
 standard_deviation = round(np.std(data),1)
 
